@@ -1,0 +1,48 @@
+.DropdownMenu {
+  position: fixed;
+  .context-title {
+    overflow-x: hidden;
+    overflow-y: visible;
+    width: 100%;
+    height: 1em;
+    padding: 0 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: bottom;
+  }
+  * {
+    white-space: nowrap;
+    max-width: 256px;
+    text-overflow: ellipsis;
+  }
+  .context-disabled {
+    width: inherit;
+    .context-title {
+      cursor: default;
+    }
+  }
+  .context-submenu {
+    position: relative;
+    & > .context-title {
+      position: relative;
+      padding-right: 15px;
+      &::after {
+        content: "";
+        transform: rotate(45deg);
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 4px;
+        right: 4px;
+        border-top: 2px solid;
+        border-right: 2px solid;
+      }
+    }
+    & > .submenu-anchor {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

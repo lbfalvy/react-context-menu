@@ -1,0 +1,15 @@
+body {
+  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+}
+
+.DropdownMenu {
+  color: #bbb;
+  background-color: #444;
+  border: 1px solid #555;
+  .context-entry:hover {
+    background-color: #555;
+  }
+  .context-disabled {
+    color: #888;
+  }
+}
