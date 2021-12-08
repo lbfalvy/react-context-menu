@@ -6,6 +6,9 @@ body {
   color: #bbb;
   background-color: #444;
   border: 1px solid #555;
+  .context-title {
+    padding: 2px 5px;
+  }
   .context-entry:hover {
     background-color: #555;
   }
