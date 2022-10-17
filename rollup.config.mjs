@@ -5,7 +5,7 @@ import dts from 'rollup-plugin-dts';
 import sass from 'rollup-plugin-sass';
 import { dirname } from 'path';
 
-const pkg = require("./package.json")
+const pkg = (await import("./package.json", { assert: { type: "json" }})).default
 
 const baseConfig = {
     input: 'src/index.ts',
